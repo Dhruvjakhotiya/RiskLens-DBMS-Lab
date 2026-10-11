@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+instance/
+database/*.db
+ml/saved_models/*
+!ml/saved_models/.gitkeep
+ml/data/*
+!ml/data/.gitkeep
+static/plots/*
+!static/plots/.gitkeep
+.env

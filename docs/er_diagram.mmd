@@ -1,0 +1,9 @@
+erDiagram
+    patients ||--o{ health_records : owns
+    patients ||--o{ risk_assessments : receives
+    diseases ||--o{ ml_models : has
+    diseases ||--o{ risk_assessments : measures
+    ml_models ||--o{ risk_assessments : produces
+    health_records ||--o{ risk_assessments : assessed
+    risk_assessments ||--o{ prediction_explanations : explains
+    ml_models ||--o{ model_evaluations : evaluated
